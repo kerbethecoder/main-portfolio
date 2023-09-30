@@ -12,7 +12,7 @@ module.exports = {
     title: `Portfolio Website`,
     description: `A clean and user-friendly portfolio website, offering a glimpse into my skills and achievements.`,
     author: `@kerbethecoder`,
-    siteUrl: `not yet established`,
+    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
     "gatsby-plugin-postcss",
