@@ -7,42 +7,56 @@
 }
 
 .greeting {
-  position: absolute;
   top: 60%;
   left: 35.5%;
 }
 
 .hero-img {
-  position: absolute;
   top: 30%;
   left: 37.8%;
-
   box-shadow: 0 0px 20px -8px rgba(0, 0, 0, 0.7);
 }
 
 .centerLine {
-  position: absolute;
   top: 60%;
 }
 
 .introduction {
-  position: absolute;
   top: 58.5%;
   left: 50.5%;
   width: 350px;
 }
 
 .description {
-  position: absolute;
   top: 61.5%;
   left: 50.5%;
-
   line-height: 16px;
 }
 
 .scrollTxt {
   opacity: 30%;
-
-  position: absolute;
   top: 87%;
+}
+
+.cornerLine {
+  top: 85%;
+  left: 3%;
+}
+
+.copyright {
+  top: 94.6%;
+  margin-left: 3.7%;
+}
+
+.socials {
+  top: 68%;
+  margin-left: 2.2%;
+}
+
+.bgSection {
+  padding: 0 650px;
+}
+
+.techIcons {
+  /* font-size: 56px; */
 }
