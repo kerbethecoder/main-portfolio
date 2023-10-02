@@ -7,7 +7,7 @@
 
 @layer base {
   html {
-    @apply font-primaryFont bg-primaryBg;
+    @apply font-primaryFont bg-primaryBg text-secondaryBg;
   }
 }
 

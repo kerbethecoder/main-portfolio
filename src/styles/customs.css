@@ -59,3 +59,8 @@
     transform: translateY(-32px);
   }
 }
+
+/* icons */
+ion-icon {
+  /* color: red; */
+}

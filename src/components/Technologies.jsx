@@ -16,8 +16,10 @@ import {
 const Technologies = () => {
   return (
     <section className="flexCenter flex-col mt-80">
-      <h2 className="font-bold text-lg font-secondaryFont">
-        Some technologies I work with most of the time:
+      <ion-icon name="bug" size="large"></ion-icon>
+      <h2 className="font-secondaryFont text-lg font-bold">Technologies</h2>
+      <h2 className="mt-2">
+        I frequently work with the following technologies:
       </h2>
       <div className="techIcons">
         <div className="flex">
