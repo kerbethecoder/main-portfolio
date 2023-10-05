@@ -9,7 +9,7 @@ const Timeline = () => {
     },
     second: {
       duration: "June 2022 - August 2022",
-      title: "On-the-Training",
+      title: "On-the-Job Training",
       work: "Working with two senior developers, I went through mini-tasks they gave me, such as reducing a complex code block to a brief one, and other front-end development-related work. Throughout the course of the job, I also get more knowledge about git version control. I also got a taste of what back-end development is all about and came across PHP, but I didn't stick around in that assignment for very long because of the intricate code used by the company. On the other hand, I now understand what developers do within a corporation, including but not limited to the necessary daily standup meetings.",
     },
     third: {
@@ -26,11 +26,11 @@ const Timeline = () => {
 
   return (
     <section className="timelineSection flexCenter flex-col mt-80">
-      <ion-icon name="code-slash" size="large"></ion-icon>
+      <ion-icon name="git-merge" size="large"></ion-icon>
       <h2 className="font-secondaryFont text-lg font-bold">Timeline</h2>
 
       {Object.keys(experiences).map((key, index) => (
-        <div className="flex mt-2 mb-4">
+        <div className="flex mt-4 mb-4">
           <h4
             className="flex flex-row-reverse font-bold text-sm opacity-40 w-[490px] px-2 pt-[2px]"
             key={index}

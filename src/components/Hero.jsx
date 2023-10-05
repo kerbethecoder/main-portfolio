@@ -1,4 +1,5 @@
 import React from "react"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 import { displayPicture, centerLine, greetings } from "../images"
 
@@ -27,7 +28,10 @@ const Hero = () => {
         A web developer with a passion for both front-end and <br /> back-end
         development since year 2022.
       </p>
-      <button className="btn px-5 py-2.5 rounded-lg font-bold text-sm">
+      <button
+        className="btn px-5 py-2.5 rounded-lg font-bold text-sm"
+        onClick={() => scrollTo("#contact")}
+      >
         Let's Work Together!
       </button>
       <p className="scrollTxt absolute tracking-wide">SCROLL ↡ </p>

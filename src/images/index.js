@@ -12,6 +12,9 @@ import figmaIcon from "./tech-icons/figma.svg"
 import gitIcon from "./tech-icons/git.svg"
 import ubuntuIcon from "./tech-icons/ubuntu.svg"
 import vsIcon from "./tech-icons/vs.svg"
+import gatsbyIcon from "./tech-icons/gatsby.svg"
+import rpsGame from "./cards/rps-game.png"
+import mockNetflix from "./cards/mock-netflix.png"
 
 export {
   displayPicture,
@@ -28,4 +31,7 @@ export {
   gitIcon,
   ubuntuIcon,
   vsIcon,
+  gatsbyIcon,
+  rpsGame,
+  mockNetflix,
 }

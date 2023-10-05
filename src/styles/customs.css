@@ -46,7 +46,7 @@
 .username {
   position: relative;
   top: 0;
-  animation: move 5s infinite 1s;
+  animation: move 4s infinite;
 }
 
 @keyframes move {
@@ -58,9 +58,4 @@
   60% {
     transform: translateY(-32px);
   }
-}
-
-/* icons */
-ion-icon {
-  /* color: red; */
 }

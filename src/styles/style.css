@@ -49,14 +49,59 @@
 }
 
 .socials {
-  top: 68%;
+  top: 66%;
   margin-left: 2.2%;
+}
+
+.socials a ion-icon:hover,
+button ion-icon:hover {
+  @apply text-dimBlack;
+
+  animation: buzz 150ms infinite;
+}
+
+@keyframes buzz {
+  0%,
+  20% {
+    @apply rotate-6;
+  }
+  40%,
+  60% {
+    @apply -rotate-6;
+  }
+  100% {
+    @apply rotate-0;
+  }
 }
 
 .bgSection {
   padding: 0 650px;
 }
 
-.techIcons {
-  /* font-size: 56px; */
+.card {
+  width: 700px;
+  height: 300px;
+
+  background: #ffffe3;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 20px 0px rgba(26, 26, 26, 0.25);
+  border: 1px solid rgba(26, 26, 26, 0.25);
+}
+
+.card__img img {
+  box-shadow: 4px 4px 4px 0px rgba(26, 26, 26, 0.25);
+}
+
+.cardIcon ion-icon:hover {
+  @apply text-dimBlack;
+}
+
+.pFooter a {
+  @apply font-bold;
+}
+
+.pFooter a:hover {
+  @apply text-secondaryBg underline;
 }
