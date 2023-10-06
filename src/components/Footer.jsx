@@ -2,7 +2,6 @@ import React from "react"
 
 const Footer = () => {
   return (
-    //
     <section className="pb-52 px-8 md:px-20" id="contact">
       <div className="flex flex-col gap-10 md:flex-row">
         <h6 className="text-xl font-bold md:w-6/12 lg:pl-96 lg:text-3xl">

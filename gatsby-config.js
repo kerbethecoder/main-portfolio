@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Portfolio Website`,
+    title: `Kerby Cantos`,
     description: `A clean and user-friendly portfolio website, offering a glimpse into my skills and achievements.`,
     author: `@kerbethecoder`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://kerbethecoder.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-smoothscroll`,

@@ -2,7 +2,7 @@ import React from "react"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 import { cornerLine } from "../images"
-import Socials from "./Socials"
+import Socials from "./socials/Socials"
 
 const Layout = ({ children }) => {
   return (

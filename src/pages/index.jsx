@@ -8,13 +8,13 @@ import {
   Projects,
   Footer,
   Layout,
-  SEO,
+  Seo,
 } from "../components"
 
 const index = () => {
   return (
     <Layout>
-      <SEO />
+      <Seo />
       <Hero />
       <Background />
       <Technologies />
