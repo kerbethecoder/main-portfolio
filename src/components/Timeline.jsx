@@ -25,25 +25,29 @@ const Timeline = () => {
   }
 
   return (
-    <section className="timelineSection flexCenter flex-col mt-80">
+    <section className="flexCenter flex-col mb-60 lg:mb-80">
       <ion-icon name="git-merge" size="large"></ion-icon>
-      <h2 className="font-secondaryFont text-lg font-bold">Timeline</h2>
+      <h2 className="font-secondaryFont font-bold md:text-base lg:text-lg">
+        Timeline
+      </h2>
 
       {Object.keys(experiences).map((key, index) => (
-        <div className="flex mt-4 mb-4">
-          <h4
-            className="flex flex-row-reverse font-bold text-sm opacity-40 w-[490px] px-2 pt-[2px]"
-            key={index}
-          >
-            {experiences[key].duration}
-          </h4>
-          <div>
-            <h3 className="font-bold" key={index}>
-              {experiences[key].title}
-            </h3>
-            <p className="w-[500px]" key={index}>
-              {experiences[key].work}
-            </p>
+        <div className="px-7 md:px-28 my-4">
+          <div className="flex flex-col md:flex-row">
+            <h4
+              className="tl__duration text-xs font-bold opacity-40 flex pr-4"
+              key={index}
+            >
+              {experiences[key].duration}
+            </h4>
+            <div className="md:w-6/12">
+              <h3 className="font-bold text-sm lg:text-lg" key={index}>
+                {experiences[key].title}
+              </h3>
+              <p className="text-sm lg:text-base lg:w-7/12" key={index}>
+                {experiences[key].work}
+              </p>
+            </div>
           </div>
         </div>
       ))}

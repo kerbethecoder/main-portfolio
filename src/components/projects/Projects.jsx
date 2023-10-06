@@ -37,9 +37,11 @@ const Projects = () => {
   }
 
   return (
-    <section className="flexCenter flex-col mt-80">
+    <section className="flexCenter flex-col mb-60 lg:mb-80">
       <ion-icon name="folder-open" size="large"></ion-icon>
-      <h2 className="font-secondaryFont text-lg font-bold">Projects</h2>
+      <h2 className="font-secondaryFont font-bold md:text-base lg:text-lg">
+        Projects
+      </h2>
 
       {Object.keys(projects).map((key, i) => (
         <Card
@@ -72,7 +74,7 @@ const Projects = () => {
             )
           }
           children={
-            <div className="black flex gap-2 w-fit">
+            <div className="flex gap-2 w-fit">
               {Object.values(projects[key].frameworks).map((framework, i) => (
                 <Frameworks key={i} item={framework} />
               ))}

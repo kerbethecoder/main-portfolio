@@ -9,28 +9,27 @@ const Card = ({
   children,
 }) => {
   return (
-    <div className="card flex justify-center items-stretch rounded mt-5">
-      <div className="flexCenter w-2/3">
-        <div className="w-full h-3/4 ml-5">
-          <img
-            src={imgSrc}
-            alt={projTitle}
-            className="object-cover w-full h-full rounded"
-          />
-        </div>
+    <div className="card flex flex-col items-center rounded mt-4 mb-10 py-5 ">
+      <div className="card__img w-2/3 mb-3 lg:mb-0">
+        <img
+          src={imgSrc}
+          alt={projTitle}
+          className="object-cover w-full h-full rounded"
+        />
       </div>
-      <div className="flexCenter flex-col w-full">
-        <div className="h-5/6 pl-6">
-          <div className="flex justify-end h-1/6 gap-2 pr-3">
+
+      <div className="flex gap-3 px-4 flex-col md:w-full">
+        <div className="md:pl-6">
+          <div className="flex md:justify-end md:gap-2">
             {github}
             {openSite}
           </div>
-          <div className="h-4/6">
-            <h6 className="font-bold text-xl">{projTitle}</h6>
-            <p className="text-sm pr-2">{projDescription}</p>
-          </div>
-          <div className="flex gap-2 w-fit">{children}</div>
         </div>
+        <div className="h-3/5">
+          <h6 className="text-base font-bold lg:text-xl">{projTitle}</h6>
+          <p className="text-sm lg:text-base lg:pr-2">{projDescription}</p>
+        </div>
+        <div>{children}</div>
       </div>
     </div>
   )

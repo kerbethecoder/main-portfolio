@@ -9,6 +9,7 @@
 import "./src/styles/global.css"
 import "./src/styles/customs.css"
 import "./src/styles/style.css"
+import "./src/styles/styles.css"
 
 export const onClientEntry = () => {
   const ionIconsModuleScript = document.createElement("script")

@@ -1,0 +1,145 @@
+.bookmark {
+  @apply md:ml-28
+  lg:ml-72 lg:sticky lg:top-0;
+}
+
+.corner-line {
+  @apply lg:block lg:ml-12 lg:top-[86%];
+}
+
+.copyright {
+  @apply lg:block lg:text-sm lg:top-[95.5%] lg:ml-16;
+}
+
+.socials {
+  @apply lg:block lg:top-[66%] lg:ml-8;
+}
+
+.socials a ion-icon:hover,
+button ion-icon:hover {
+  @apply text-dimBlack;
+
+  animation: buzz 150ms infinite;
+}
+
+@keyframes buzz {
+  0%,
+  20% {
+    @apply rotate-6;
+  }
+  40%,
+  60% {
+    @apply -rotate-6;
+  }
+  100% {
+    @apply rotate-0;
+  }
+}
+
+.greetings {
+  @apply lg:block lg:absolute lg:top-[60%] lg:left-[35.5%];
+}
+
+.hero-img {
+  box-shadow: 0 0px 20px -8px rgba(0, 0, 0, 0.7);
+
+  @apply lg:absolute lg:top-[22%] lg:left-[37.8%];
+}
+
+.center-line {
+  @apply lg:block lg:absolute lg:top-[60%];
+}
+
+.introduction {
+  @apply lg:absolute lg:top-[57.5%] lg:left-[50.5%];
+}
+
+.description {
+  @apply lg:absolute lg:top-[59.5%] lg:left-[50.5%] 
+  lg:text-base lg:text-left lg:px-0 lg:leading-4;
+}
+
+.dynamicNames {
+  overflow: hidden;
+  height: 28px;
+}
+
+.username {
+  animation: move 4s infinite;
+}
+
+@keyframes move {
+  20%,
+  80% {
+    transform: translateY(0);
+  }
+  40%,
+  60% {
+    transform: translateY(-28px);
+  }
+}
+
+@media (min-width: 1024px) {
+  @keyframes move {
+    20%,
+    80% {
+      transform: translateY(0);
+    }
+    40%,
+    60% {
+      transform: translateY(-32px);
+    }
+  }
+}
+
+.btn {
+  border: 1px solid #10100e;
+  box-shadow: 0 0px 20px -8px rgba(0, 0, 0, 0.7);
+
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+
+  @apply lg:text-sm lg:ml-10;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px 0px rgba(16, 16, 14, 0.7);
+  border: 2px solid rgba(16, 16, 14, 0.8);
+}
+
+.bg__content {
+  @apply md:px-32
+  lg:text-base;
+}
+
+.tl__duration {
+  @apply md:flex-row-reverse md:text-sm md:w-6/12
+  lg:mt-1;
+}
+
+.card {
+  @apply md:items-stretch md:flex-row md:w-[700px] md:h-[300px];
+}
+
+.card:hover {
+  box-shadow: 0px 0px 20px 0px rgba(26, 26, 26, 0.25);
+  border: 1px solid rgba(26, 26, 26, 0.25);
+}
+
+.card__img {
+  box-shadow: 4px 4px 4px 0px rgba(26, 26, 26, 0.25);
+
+  @apply md:ml-5;
+}
+
+.cardIcon ion-icon:hover {
+  @apply text-dimBlack;
+}
+
+.pFooter a {
+  @apply font-bold;
+}
+
+.pFooter a:hover {
+  @apply text-secondaryBg underline;
+}

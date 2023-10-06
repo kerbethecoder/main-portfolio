@@ -14,3 +14,16 @@
 .flexCenter {
   @apply flex justify-center items-center;
 }
+
+::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(16, 16, 14, 0.4);
+  border-radius: 4px;
+}

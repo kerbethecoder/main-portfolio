@@ -15,11 +15,11 @@ import {
 } from "../images"
 
 const TechnologyLine = ({ technologies }) => (
-  <div className="flex mt-2 gap-10">
+  <div className="flex mt-2 gap-2 md:gap-10">
     {technologies.map((item, index) => (
       <div className="flexCenter" key={index}>
         <img src={item.src} alt={item.title} className="h-10" />
-        <p className="font-bold">{item.title}</p>
+        <p className="font-bold text-sm md:text-base">{item.title}</p>
       </div>
     ))}
   </div>
@@ -79,12 +79,14 @@ const Technologies = () => {
     },
   ]
   return (
-    <section className="flexCenter flex-col mt-80">
+    <section className="flexCenter flex-col mb-60 lg:mb-80">
       <ion-icon name="bug" size="large"></ion-icon>
-      <h2 className="font-secondaryFont text-lg font-bold">Technologies</h2>
-      <h2 className="mt-1 mb-6">
-        I frequently work with the following technologies:
+      <h2 className="font-secondaryFont font-bold md:text-base lg:text-lg">
+        Technologies
       </h2>
+      <p className="text-sm mt-2 md:mb-4 lg:text-base">
+        I frequently work with the following technologies:
+      </p>
 
       <TechnologyLine technologies={firstLine} />
       <TechnologyLine technologies={secondLine} />
