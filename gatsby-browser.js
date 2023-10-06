@@ -7,8 +7,6 @@
 // You can delete this file if you're not using it
 
 import "./src/styles/global.css"
-import "./src/styles/customs.css"
-import "./src/styles/style.css"
 import "./src/styles/styles.css"
 
 export const onClientEntry = () => {
