@@ -74,7 +74,7 @@ Visit their [GitHub](https://github.com/ionic-team/ionicons) for more info.
 
 ## Contact
 
-My [LinkedIn](https://www.linkedin.com/in/kerby-cantos-0b0738240/).
+My [LinkedIn](https://www.linkedin.com/in/krbycnts/).
 
 🚀 [kerbethecoder](https://github.com/kerbethecoder)  
 📫 krby.cnts@gmail.com  

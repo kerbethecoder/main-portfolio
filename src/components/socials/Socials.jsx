@@ -5,7 +5,7 @@ const Socials = () => {
     <ul className="flex gap-2 lg:flex-col">
       <li>
         <a
-          href="https://www.linkedin.com/in/kerby-cantos-0b0738240/"
+          href="https://www.linkedin.com/in/krbycnts/"
           target="_blank"
           rel="noopener noreferrer"
         >
