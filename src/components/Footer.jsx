@@ -17,17 +17,54 @@ const Footer = () => {
             <a
               href="mailto:krbycnts@gmail.com"
               className="font-bold hover:underline md:text-sm lg:text-base"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               krby.cnts@gmail.com
             </a>
           </div>
           <p className="text-xs text-dimBlack pFooter pr-4 lg:text-sm">
-            Designed in <a href="https://www.figma.com/">Figma</a>, coded in{" "}
-            <a href="https://code.visualstudio.com/">Visual Studio Code</a>,
-            built with <a href="https://www.gatsbyjs.com/">Gatsby</a>, styled
-            using <a href="https://tailwindcss.com/">Tailwind CSS</a>, and
-            deployed in <a href="https://www.netlify.com/">Netlify</a> by me, of
-            course. ^^
+            Designed in{" "}
+            <a
+              href="https://www.figma.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Figma
+            </a>
+            , coded in{" "}
+            <a
+              href="https://code.visualstudio.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visual Studio Code
+            </a>
+            , built with{" "}
+            <a
+              href="https://www.gatsbyjs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Gatsby
+            </a>
+            , styled using{" "}
+            <a
+              href="https://tailwindcss.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Tailwind CSS
+            </a>
+            , and deployed in{" "}
+            <a
+              href="https://www.netlify.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Netlify
+            </a>{" "}
+            by me, of course. ^^
           </p>
         </div>
       </div>
