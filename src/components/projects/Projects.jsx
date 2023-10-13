@@ -84,16 +84,12 @@ const Projects = () => {
         />
       ))}
       <div className="flexCenter my-20">
-        {/* <a
-          href="https://kerbethecoder.netlify.app/resume/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="/resume" target="_blank" rel="noopener noreferrer">
           <button className="btn__resume">View my Résumé 👌</button>
-        </a> */}
-        <Link to="/resume">
+        </a>
+        {/* <Link to="/resume">
           <button className="btn__resume">View my Résumé 👌</button>
-        </Link>
+        </Link> */}
       </div>
     </section>
   )

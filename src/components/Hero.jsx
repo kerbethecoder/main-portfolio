@@ -9,7 +9,7 @@ const Hero = () => {
       <img src={greetings} alt="greetings" className="greetings hidden" />
       <img
         src={displayPicture}
-        alt="display-picture"
+        alt="a man standing holding his phone"
         className="hero-img h-[400px] mt-20"
       />
       <img src={centerLine} alt="center-line" className="center-line hidden" />
