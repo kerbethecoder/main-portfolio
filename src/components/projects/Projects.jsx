@@ -83,7 +83,11 @@ const Projects = () => {
         />
       ))}
       <div className="flexCenter my-20">
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://kerbethecoder.netlify.app/resume/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button className="btn__resume">View my Résumé 👌</button>
         </a>
       </div>
