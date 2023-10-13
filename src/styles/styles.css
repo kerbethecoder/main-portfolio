@@ -102,7 +102,18 @@ button ion-icon:hover {
   @apply lg:text-sm lg:ml-10;
 }
 
-.btn:hover {
+.btn__resume {
+  border: 1px solid #10100e;
+  box-shadow: 0 0px 20px -8px rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+
+  @apply px-5 py-2.5 rounded-lg font-bold text-xs
+  lg:text-sm;
+}
+
+.btn:hover,
+.btn__resume:hover {
   box-shadow: 0 0 10px 0px rgba(16, 16, 14, 0.7);
   border: 2px solid rgba(16, 16, 14, 0.8);
 }
