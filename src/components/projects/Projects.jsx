@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Frameworks from "./Frameworks"
 import Card from "./Card"
@@ -38,7 +37,7 @@ const Projects = () => {
   }
 
   return (
-    <section className="flexCenter flex-col mb-20">
+    <section className="flexCenter flex-col mb-60 lg:mb-80">
       <ion-icon name="folder-open" size="large"></ion-icon>
       <h2 className="font-secondaryFont font-bold md:text-base lg:text-lg">
         Projects
@@ -83,14 +82,6 @@ const Projects = () => {
           }
         />
       ))}
-      <div className="flexCenter my-20">
-        <a href="/resume" target="_blank" rel="noopener noreferrer">
-          <button className="btn__resume">View my Résumé 👌</button>
-        </a>
-        {/* <Link to="/resume">
-          <button className="btn__resume">View my Résumé 👌</button>
-        </Link> */}
-      </div>
     </section>
   )
 }
