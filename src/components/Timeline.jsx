@@ -1,6 +1,13 @@
-import React from "react"
+import React, { useEffect } from "react"
+
+import { observeHiddenElements } from "./intersectionObserver"
 
 const Timeline = () => {
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll(".hiddenElem")
+    observeHiddenElements(hiddenElements)
+  })
+
   const experiences = {
     first: {
       duration: "January 2023 - April 2023",
@@ -26,8 +33,10 @@ const Timeline = () => {
 
   return (
     <section className="flexCenter flex-col mb-60 lg:mb-80">
-      <ion-icon name="git-merge" size="large"></ion-icon>
-      <h2 className="font-secondaryFont font-bold md:text-base lg:text-lg">
+      <div className="hiddenElem">
+        <ion-icon name="git-merge" size="large"></ion-icon>
+      </div>
+      <h2 className="hiddenElem font-secondaryFont font-bold md:text-base lg:text-lg">
         Timeline
       </h2>
 
@@ -35,12 +44,12 @@ const Timeline = () => {
         <div className="px-7 md:px-28 my-4">
           <div className="flex flex-col md:flex-row">
             <h4
-              className="tl__duration text-xs font-bold opacity-40 flex pr-4"
+              className="hiddenElem tl__duration text-xs font-bold opacity-40 flex pr-4"
               key={index}
             >
               {experiences[key].duration}
             </h4>
-            <div className="md:w-6/12">
+            <div className="hiddenElem md:w-6/12">
               <h3 className="font-bold text-sm lg:text-lg" key={index}>
                 {experiences[key].title}
               </h3>

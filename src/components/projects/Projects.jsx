@@ -1,10 +1,16 @@
-import React from "react"
+import React, { useEffect } from "react"
 
+import { observeHiddenElements } from "../intersectionObserver"
 import Frameworks from "./Frameworks"
 import Card from "./Card"
 import { rpsGame, mockNetflix } from "../../images"
 
 const Projects = () => {
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll(".hiddenElem")
+    observeHiddenElements(hiddenElements)
+  })
+
   const projects = {
     firstProj: {
       src: rpsGame,
@@ -38,8 +44,10 @@ const Projects = () => {
 
   return (
     <section className="flexCenter flex-col mb-20">
-      <ion-icon name="folder-open" size="large"></ion-icon>
-      <h2 className="font-secondaryFont font-bold md:text-base lg:text-lg">
+      <div className="hiddenElem">
+        <ion-icon name="folder-open" size="large"></ion-icon>
+      </div>
+      <h2 className="hiddenElem font-secondaryFont font-bold md:text-base lg:text-lg">
         Projects
       </h2>
 
@@ -83,7 +91,7 @@ const Projects = () => {
         />
       ))}
 
-      <div className="flexCenter my-20">
+      <div className="hiddenElem flexCenter my-20">
         <a
           href="https://webcv-kerbethecoder.netlify.app/"
           target="_blank"

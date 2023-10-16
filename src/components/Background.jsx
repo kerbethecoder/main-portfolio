@@ -1,15 +1,24 @@
-import React from "react"
+import React, { useEffect } from "react"
+
+import { observeHiddenElements } from "./intersectionObserver"
 
 const Background = () => {
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll(".hiddenElem")
+    observeHiddenElements(hiddenElements)
+  })
+
   return (
     <section className="flexCenter flex-col mb-60 lg:mb-80">
-      <ion-icon name="person-circle" size="large"></ion-icon>
+      <div className="hiddenElem">
+        <ion-icon name="person-circle" size="large"></ion-icon>
+      </div>
 
       <div className="flexCenter flex-col lg:w-6/12">
-        <h2 className="font-secondaryFont font-bold md:text-base lg:text-lg">
+        <h2 className="hiddenElem font-secondaryFont font-bold md:text-base lg:text-lg">
           Background
         </h2>
-        <p className="bg__content text-center text-sm mt-2 px-6">
+        <p className="hiddenElem bg__content text-center text-sm mt-2 px-6">
           I studied engineering for four years at{" "}
           <strong>Divine Word College of Calapan</strong> in the{" "}
           <strong>Philippines</strong>, where I earned a{" "}

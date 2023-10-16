@@ -154,3 +154,16 @@ button ion-icon:hover {
 .pFooter a:hover {
   @apply text-secondaryBg underline;
 }
+
+.hiddenElem {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(80%);
+  transition: all 0.5s;
+}
+
+.showElem {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}

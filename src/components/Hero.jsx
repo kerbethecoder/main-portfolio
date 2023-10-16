@@ -1,11 +1,26 @@
-import React from "react"
+import React, { useEffect } from "react"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 import { displayPicture, centerLine, greetings } from "../images"
+import { observeHiddenElements } from "./intersectionObserver"
 
 const Hero = () => {
+  useEffect(() => {
+    const sectionHeadChildren = document.getElementById("sectionHead").children
+    const childrenArray = Array.from(sectionHeadChildren)
+    childrenArray.forEach(el => {
+      el.classList.add("hiddenElem")
+    })
+
+    const hiddenElements = document.querySelectorAll(".hiddenElem")
+    observeHiddenElements(hiddenElements)
+  })
+
   return (
-    <section className="bg-primaryBg flexCenter flex-col mb-60 lg:mb-0 lg:h-screen">
+    <section
+      id="sectionHead"
+      className="bg-primaryBg flexCenter flex-col mb-60 lg:mb-0 lg:h-screen"
+    >
       <img src={greetings} alt="greetings" className="greetings hidden" />
       <img
         src={displayPicture}

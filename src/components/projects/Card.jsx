@@ -1,4 +1,6 @@
-import React from "react"
+import React, { useEffect } from "react"
+
+import { observeHiddenElements } from "../intersectionObserver"
 
 const Card = ({
   imgSrc,
@@ -8,9 +10,14 @@ const Card = ({
   projDescription,
   children,
 }) => {
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll(".hiddenElem")
+    observeHiddenElements(hiddenElements)
+  })
+
   return (
     <div className="card flex flex-col items-center rounded mt-4 mb-10 py-5 ">
-      <div className="card__img w-2/3 mb-3 lg:mb-0">
+      <div className="hiddenElem card__img w-2/3 mb-3 lg:mb-0">
         <img
           src={imgSrc}
           alt={projTitle}
@@ -18,7 +25,7 @@ const Card = ({
         />
       </div>
 
-      <div className="flex gap-3 px-4 flex-col md:w-full">
+      <div className="hiddenElem flex gap-3 px-4 flex-col md:w-full">
         <div className="md:pl-6">
           <div className="flex md:justify-end md:gap-2">
             {github}
