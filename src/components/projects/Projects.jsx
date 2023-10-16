@@ -37,7 +37,7 @@ const Projects = () => {
   }
 
   return (
-    <section className="flexCenter flex-col mb-60 lg:mb-80">
+    <section className="flexCenter flex-col mb-20">
       <ion-icon name="folder-open" size="large"></ion-icon>
       <h2 className="font-secondaryFont font-bold md:text-base lg:text-lg">
         Projects
@@ -82,6 +82,16 @@ const Projects = () => {
           }
         />
       ))}
+
+      <div className="flexCenter my-20">
+        <a
+          href="https://webcv-kerbethecoder.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="btn__resume">View my Résumé 👌</button>
+        </a>
+      </div>
     </section>
   )
 }
