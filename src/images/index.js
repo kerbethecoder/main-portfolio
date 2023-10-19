@@ -15,6 +15,7 @@ import vsIcon from "./tech-icons/vs.svg"
 import gatsbyIcon from "./tech-icons/gatsby.svg"
 import rpsGame from "./cards/rps-game.png"
 import mockNetflix from "./cards/mock-netflix.png"
+import avatar from "./avatar.svg"
 
 export {
   displayPicture,
@@ -34,4 +35,5 @@ export {
   gatsbyIcon,
   rpsGame,
   mockNetflix,
+  avatar,
 }

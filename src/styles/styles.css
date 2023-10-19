@@ -37,7 +37,7 @@ button ion-icon:hover {
 }
 
 .greetings {
-  @apply lg:block lg:absolute lg:top-[60%] lg:left-[35.5%];
+  @apply lg:block lg:absolute lg:top-[52%] lg:left-[35.5%];
 }
 
 .hero-img {
@@ -47,16 +47,21 @@ button ion-icon:hover {
 }
 
 .center-line {
-  @apply lg:block lg:absolute lg:top-[60%];
+  @apply lg:block lg:absolute lg:top-[51%];
 }
 
 .introduction {
-  @apply lg:absolute lg:top-[57.5%] lg:left-[50.5%];
+  @apply lg:absolute lg:top-[48.5%] lg:left-[50.5%];
 }
 
 .description {
-  @apply lg:absolute lg:top-[59.5%] lg:left-[50.5%] 
+  @apply lg:absolute lg:top-[50.5%] lg:left-[50.5%] 
   lg:text-base lg:text-left lg:px-0 lg:leading-4;
+}
+
+.xdiv {
+  border-top: 2px solid #464a4e;
+  width: 100px;
 }
 
 .dynamicNames {
@@ -103,44 +108,46 @@ button ion-icon:hover {
 }
 
 .btn__resume {
-  border: 1px solid #10100e;
   box-shadow: 0 0px 20px -8px rgba(0, 0, 0, 0.7);
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 
-  @apply px-5 py-2.5 rounded-lg font-bold text-xs
+  @apply border border-secondaryBg bg-secondaryBg text-primaryBg font-bold text-xs px-5 py-2.5 rounded-lg
   lg:text-sm;
 }
 
-.btn:hover,
 .btn__resume:hover {
+  @apply bg-primaryBg text-secondaryBg border border-dimBlack;
+}
+
+.btn:hover {
   box-shadow: 0 0 10px 0px rgba(16, 16, 14, 0.7);
   border: 2px solid rgba(16, 16, 14, 0.8);
 }
 
 .bg__content {
-  @apply md:px-32
-  lg:text-base;
+  @apply lg:text-base;
 }
 
 .tl__duration {
-  @apply md:flex-row-reverse md:text-sm md:w-6/12
-  lg:mt-1;
+  @apply lg:justify-end lg:text-sm lg:w-4/12 lg:pr-9 lg:pt-4;
+}
+
+.tl__details {
+  @apply border-t border-t-black lg:border-t-0
+  lg:w-8/12 lg:border-l lg:border-l-black lg:pl-9 lg:py-3;
 }
 
 .card {
-  @apply md:items-stretch md:flex-row md:w-[700px] md:h-[300px];
+  border: 1px solid rgba(26, 26, 26, 0.25);
+  transition: transform 0.2s ease-in-out;
+  @apply md:flex-row md:gap-3 md:pl-5
+  lg:h-64;
 }
 
 .card:hover {
   box-shadow: 0px 0px 20px 0px rgba(26, 26, 26, 0.25);
-  border: 1px solid rgba(26, 26, 26, 0.25);
-}
-
-.card__img {
-  box-shadow: 4px 4px 4px 0px rgba(26, 26, 26, 0.25);
-
-  @apply md:ml-5;
+  transform: scale(1.02);
 }
 
 .cardIcon ion-icon:hover {

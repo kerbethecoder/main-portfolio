@@ -87,20 +87,15 @@ const Technologies = () => {
   ]
 
   return (
-    <section className="flexCenter flex-col mb-60 lg:mb-80">
-      <div className="hiddenElem">
-        <ion-icon name="bug" size="large"></ion-icon>
-      </div>
-      <h2 className="hiddenElem font-secondaryFont font-bold md:text-base lg:text-lg">
-        Technologies
-      </h2>
-      <p className="hiddenElem text-sm mt-2 md:mb-4 lg:text-base">
+    <section className="flexCenter flex-col mb-60 lg:gap-10 lg:flex-row lg:mb-96">
+      <p className="hiddenElem text-sm lg:text-base">
         I frequently work with the following technologies:
       </p>
-
-      <TechnologyLine technologies={firstLine} />
-      <TechnologyLine technologies={secondLine} />
-      <TechnologyLine technologies={thirdLine} />
+      <div className="flex flex-col items-center">
+        <TechnologyLine technologies={firstLine} />
+        <TechnologyLine technologies={secondLine} />
+        <TechnologyLine technologies={thirdLine} />
+      </div>
     </section>
   )
 }

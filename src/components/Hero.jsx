@@ -25,7 +25,7 @@ const Hero = () => {
       <img
         src={displayPicture}
         alt="a man standing holding his phone"
-        className="hero-img h-[400px] mt-20"
+        className="hero-img h-[400px] mt-20 lg:mt-0"
       />
       <img src={centerLine} alt="center-line" className="center-line hidden" />
       <div className="introduction flex mt-2">
@@ -47,7 +47,7 @@ const Hero = () => {
           Let's Work Together!
         </button>
       </div>
-      <p className="opacity-30 tracking-wide mt-20 lg:absolute lg:top-[80%]">
+      <p className="text-[#10100e57] tracking-wide mt-20 lg:absolute lg:top-[70%]">
         SCROLL ↡
       </p>
     </section>

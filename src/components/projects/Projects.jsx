@@ -14,7 +14,7 @@ const Projects = () => {
   const projects = {
     firstProj: {
       src: rpsGame,
-      title: "Rock, Paper, Scissors Game",
+      title: "ROCK, PAPER, SCISSORS GAME",
       description: `Challenge your friends to a classic showdown with our Rock, Paper,
       Scissors game! This interactive web game brings the timeless hand
       game to life on your screen.`,
@@ -28,11 +28,9 @@ const Projects = () => {
     },
     secondProj: {
       src: mockNetflix,
-      title: "Mock Netflix Landing Page",
-      description: `Experience the world of streaming entertainment with my "Mock Netflix
-      Landing Page" project. Developed with React and styled using Tailwind CSS, this project
-      captures the essence of Netflix's user interface for an engaging user
-      experience.`,
+      title: "MOCK NETFLIX LANDING PAGE",
+      description: `In order to demonstrate and refine my front-end web development proficiency, 
+      I have crafted a simulated landing page for the renowned streaming platform, "Netflix".`,
       github: "https://github.com/kerbethecoder/netflix-react",
       siteUrl: "https://mock-netflix-react.vercel.app/",
       frameworks: {
@@ -43,62 +41,56 @@ const Projects = () => {
   }
 
   return (
-    <section className="flexCenter flex-col mb-20">
-      <div className="hiddenElem">
-        <ion-icon name="folder-open" size="large"></ion-icon>
-      </div>
-      <h2 className="hiddenElem font-secondaryFont font-bold md:text-base lg:text-lg">
-        Projects
-      </h2>
+    <section className="flexCenter flex-col mb-20 lg:mb-96">
+      <div className="px-5 lg:px-0 lg:w-6/12">
+        <h2 className="hiddenElem font-secondaryFont font-bold text-lg lg:text-2xl">
+          Projects
+        </h2>
+        <p>Some of the projects on the internet I made so far:</p>
 
-      {Object.keys(projects).map((key, i) => (
-        <Card
-          key={i}
-          imgSrc={projects[key].src}
-          projTitle={projects[key].title}
-          projDescription={projects[key].description}
-          openSite={
-            projects[key].siteUrl && (
-              <a
-                href={projects[key].siteUrl}
-                className="cardIcon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <ion-icon name="open" size="large"></ion-icon>
-              </a>
-            )
-          }
-          github={
-            projects[key].github && (
-              <a
-                href={projects[key].github}
-                className="cardIcon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <ion-icon name="logo-github" size="large"></ion-icon>
-              </a>
-            )
-          }
-          children={
-            <div className="flex gap-2 w-fit">
-              {Object.values(projects[key].frameworks).map((framework, i) => (
-                <Frameworks key={i} item={framework} />
-              ))}
-            </div>
-          }
-        />
-      ))}
-
-      <div className="hiddenElem flexCenter my-20">
-        <a
-          href="https://webcv-kerbethecoder.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="btn__resume">View my Résumé 👌</button>
-        </a>
+        <div className="hiddenElem flexCenter flex-col">
+          {Object.keys(projects).map((key, i) => (
+            <Card
+              key={i}
+              imgSrc={projects[key].src}
+              projTitle={projects[key].title}
+              projDescription={projects[key].description}
+              openSite={
+                projects[key].siteUrl && (
+                  <a
+                    href={projects[key].siteUrl}
+                    className="cardIcon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ion-icon name="open" size="large"></ion-icon>
+                  </a>
+                )
+              }
+              github={
+                projects[key].github && (
+                  <a
+                    href={projects[key].github}
+                    className="cardIcon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ion-icon name="logo-github" size="large"></ion-icon>
+                  </a>
+                )
+              }
+              children={
+                <div className="flex gap-2 w-fit">
+                  {Object.values(projects[key].frameworks).map(
+                    (framework, i) => (
+                      <Frameworks key={i} item={framework} />
+                    )
+                  )}
+                </div>
+              }
+            />
+          ))}
+        </div>
       </div>
     </section>
   )

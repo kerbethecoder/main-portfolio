@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         primaryFont: [`"Source Sans 3"`, "sans-serif"], //400, 700
         secondaryFont: ["Playfair Display", "serif"], //400, 700
+        inter: ["Inter", "sans-serif"], //400, 700
       },
       colors: {
         primaryBg: "#FFFFE3",
