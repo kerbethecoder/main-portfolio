@@ -3,7 +3,7 @@ import React, { useEffect } from "react"
 import { observeHiddenElements } from "../intersectionObserver"
 import Frameworks from "./Frameworks"
 import Card from "./Card"
-import { rpsGame, mockNetflix } from "../../images"
+import { rpsGame, mockNetflix, theNotePad } from "../../images"
 
 const Projects = () => {
   useEffect(() => {
@@ -29,12 +29,25 @@ const Projects = () => {
     secondProj: {
       src: mockNetflix,
       title: "MOCK NETFLIX LANDING PAGE",
-      description: `In order to demonstrate and refine my front-end web development proficiency, 
+      description: `To demonstrate and refine my front-end web development proficiency, 
       I have crafted a simulated landing page for the renowned streaming platform, "Netflix".`,
       github: "https://github.com/kerbethecoder/netflix-react",
       siteUrl: "https://mock-netflix-react.vercel.app/",
       frameworks: {
         one: "React",
+        two: "TailwindCSS",
+      },
+    },
+    thirdProj: {
+      src: theNotePad,
+      title: "The NotePad.",
+      description: `A website that becomes a repository of tools such as font pairings 
+      and color combinations, and other things that is essential on 
+      my web development journey.`,
+      github: "https://github.com/kerbethecoder/the-notepad",
+      siteUrl: "https://the-notepad-by-kerbe.vercel.app/developer",
+      frameworks: {
+        one: "NextJS",
         two: "TailwindCSS",
       },
     },
@@ -48,7 +61,7 @@ const Projects = () => {
         </h2>
         <p>Some of the projects on the internet I made so far:</p>
 
-        <div className="hiddenElem flexCenter flex-col">
+        <div className="flexCenter flex-col flex-wrap lg:flex-row gap-10">
           {Object.keys(projects).map((key, i) => (
             <Card
               key={i}

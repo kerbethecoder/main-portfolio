@@ -17,7 +17,7 @@ const Timeline = () => {
     second: {
       duration: "June 2022 - August 2022",
       title: "ON-THE-JOB TRAINING",
-      work: "Working with two senior developers, I went through mini-tasks they gave me, such as reducing a complex code block to a brief one, and other front-end development-related work. Throughout the course of the job, I also get more knowledge about git version control. I also got a taste of what back-end development is all about and came across PHP, but I didn't stick around in that assignment for very long because of the intricate code used by the company. On the other hand, I now understand what developers do within a corporation, including but not limited to the necessary daily standup meetings.",
+      work: "Working with two senior developers, I went through mini-tasks they gave me, such as reducing a complex code block to a brief one, and other front-end development-related work. Throughout the course of the job, I also get more knowledge about git version control. I also got a taste of what back-end development is all about and came across PHP, but I didn't stick around in that assignment for very long because of the intricate code used by the company. On the other hand, I now understand what developers do within a corporation, including but not limited to the necessary daily standup meetings.",
     },
     third: {
       duration: "August 2021 - October 2021",
@@ -38,7 +38,7 @@ const Timeline = () => {
       </h2>
 
       {Object.keys(experiences).map((key, index) => (
-        <div className="hiddenElem flex flex-col lg:flex-row lg:px-0 px-5 mb-10">
+        <div className="hiddenElem flex flex-col lg:flex-row lg:px-0 px-5 mb-10 w-11/12">
           <h4
             className="tl__duration flex text-[#10100e57] text-xs font-bold italic"
             key={index}

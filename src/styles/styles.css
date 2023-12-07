@@ -130,7 +130,7 @@ button ion-icon:hover {
 }
 
 .tl__duration {
-  @apply lg:justify-end lg:text-sm lg:w-4/12 lg:pr-9 lg:pt-4;
+  @apply lg:justify-end lg:text-sm lg:w-5/12 lg:pr-9 lg:pt-4;
 }
 
 .tl__details {
@@ -139,10 +139,9 @@ button ion-icon:hover {
 }
 
 .card {
-  border: 1px solid rgba(26, 26, 26, 0.25);
+  border: 2px solid rgba(26, 26, 26, 0.25);
   transition: transform 0.2s ease-in-out;
-  @apply md:flex-row md:gap-3 md:pl-5
-  lg:h-64;
+  @apply lg:h-80;
 }
 
 .card:hover {
