@@ -45,7 +45,7 @@ const Projects = () => {
       and color combinations, and other things that is essential on 
       my web development journey.`,
       github: "https://github.com/kerbethecoder/the-notepad",
-      siteUrl: "https://the-notepad-by-kerbe.vercel.app/developer",
+      siteUrl: "https://the-notepad-by-kerbe.vercel.app/",
       frameworks: {
         one: "NextJS",
         two: "TailwindCSS",

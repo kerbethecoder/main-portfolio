@@ -16,7 +16,7 @@ const Card = ({
   })
 
   return (
-    <div className="hiddenElem card rounded mt-5 py-3 px-3 w-10/12 md:w-7/12 lg:w-5/12">
+    <div className="hiddenElem card rounded mt-5 py-3 px-3 w-10/12 md:w-7/12 lg:w-5/12 transition duration-300 ease-in-out hover:scale-105">
       <div className="h-2/5 hiddenElem flex justify-between">
         <div className="h-28 w-6/12">
           <img
