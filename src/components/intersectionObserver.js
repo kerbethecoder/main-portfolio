@@ -5,8 +5,6 @@ if (typeof window !== "undefined" && "IntersectionObserver" in window) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("showElem")
-      } else {
-        entry.target.classList.remove("showElem")
       }
     })
   })
