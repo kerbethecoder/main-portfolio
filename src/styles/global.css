@@ -28,3 +28,7 @@
   background-color: rgba(16, 16, 14, 0.4);
   border-radius: 4px;
 }
+
+.borderGuide {
+  border: 1px solid red;
+}
