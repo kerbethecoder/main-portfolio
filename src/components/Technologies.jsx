@@ -1,7 +1,6 @@
-import React, { useEffect } from "react"
+import React, { useEffect } from 'react';
 
-import { observeHiddenElements } from "./intersectionObserver"
-
+import { observeHiddenElements } from './intersectionObserver';
 import {
   htmlIcon,
   cssIcon,
@@ -11,93 +10,46 @@ import {
   tailwindIcon,
   figmaIcon,
   gitIcon,
-  ubuntuIcon,
   vsIcon,
   gatsbyIcon,
-} from "../images"
-
-const TechnologyLine = ({ technologies }) => (
-  <div className="hiddenElem flex mt-2 gap-2 md:gap-10">
-    {technologies.map((item, index) => (
-      <div className="flexCenter" key={index}>
-        <img src={item.src} alt={item.title} className="h-10" />
-        <p className="font-bold text-sm md:text-base">{item.title}</p>
-      </div>
-    ))}
-  </div>
-)
+  nextIcon,
+} from '../images';
 
 const Technologies = () => {
   useEffect(() => {
-    const hiddenElements = document.querySelectorAll(".hiddenElem")
-    observeHiddenElements(hiddenElements)
-  })
-
-  const firstLine = [
-    {
-      src: htmlIcon,
-      title: "HTML",
-    },
-    {
-      src: cssIcon,
-      title: "CSS",
-    },
-    {
-      src: jsIcon,
-      title: "JavaScript",
-    },
-    {
-      src: reactIcon,
-      title: "React",
-    },
-  ]
-
-  const secondLine = [
-    {
-      src: vueIcon,
-      title: "Vue.js",
-    },
-    {
-      src: tailwindIcon,
-      title: "TailwindCSS",
-    },
-    {
-      src: gatsbyIcon,
-      title: "Gatsby",
-    },
-    {
-      src: gitIcon,
-      title: "Git",
-    },
-  ]
-
-  const thirdLine = [
-    {
-      src: ubuntuIcon,
-      title: "Ubuntu",
-    },
-    {
-      src: vsIcon,
-      title: "Visual Studio Code",
-    },
-    {
-      src: figmaIcon,
-      title: "Figma",
-    },
-  ]
+    const hiddenElements = document.querySelectorAll('.hiddenElem');
+    observeHiddenElements(hiddenElements);
+  });
 
   return (
-    <section className="flexCenter flex-col mb-60 lg:gap-10 lg:flex-row lg:mb-96">
-      <p className="hiddenElem text-sm lg:text-base">
-        I frequently work with the following technologies:
-      </p>
-      <div className="flex flex-col items-center">
-        <TechnologyLine technologies={firstLine} />
-        <TechnologyLine technologies={secondLine} />
-        <TechnologyLine technologies={thirdLine} />
+    <section className="flexCenter mb-60 flex-col lg:mb-96 lg:flex-row lg:gap-10">
+      <div className="space-y-2">
+        <p className="hiddenElem">
+          I frequently work with the following technologies:
+        </p>
+        <div className="hiddenElem grid grid-cols-3 gap-4">
+          {[
+            [htmlIcon, 'HTML'],
+            [cssIcon, 'CSS'],
+            [jsIcon, 'JavaScript'],
+            [gatsbyIcon, 'Gatsby'],
+            [reactIcon, 'React'],
+            [vueIcon, 'Vue'],
+            [nextIcon, 'Next'],
+            [tailwindIcon, 'Tailwind CSS'],
+            [gitIcon, 'Git'],
+            [figmaIcon, 'Figma'],
+            [vsIcon, 'VS Code'],
+          ].map(([icon, label]) => (
+            <div className="flex items-center rounded-sm border-dimBlack/10 px-2 transition hover:bg-black/10">
+              <img src={icon} alt="test" className="h-10" />
+              <span className="pr-2 font-bold">{label}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Technologies
+export default Technologies;

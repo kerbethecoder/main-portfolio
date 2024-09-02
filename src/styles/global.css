@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,12 +8,16 @@
 
 @layer base {
   html {
-    @apply font-primaryFont bg-primaryBg text-secondaryBg;
+    @apply bg-primaryBg font-primaryFont text-secondaryBg;
   }
 }
 
 .flexCenter {
-  @apply flex justify-center items-center;
+  @apply flex items-center justify-center;
+}
+
+.socialsUL a ion-icon {
+  @apply lg:transition lg:duration-300 lg:ease-in-out lg:hover:-translate-y-1;
 }
 
 ::-webkit-scrollbar {
