@@ -1,46 +1,27 @@
-import React from "react"
+import React from 'react';
 
 const Socials = () => {
   return (
-    <ul className="flex gap-2 lg:flex-col">
-      <li>
-        <a
-          href="https://www.linkedin.com/in/krbycnts/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <ion-icon name="logo-linkedin" size="large"></ion-icon>
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/kerbethecoder"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <ion-icon name="logo-github" size="large"></ion-icon>
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.facebook.com/kerbe.cantos"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <ion-icon name="logo-facebook" size="large"></ion-icon>
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.instagram.com/krby.cnts"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <ion-icon name="logo-instagram" size="large"></ion-icon>
-        </a>
-      </li>
+    <ul className="socialsUL flex gap-2 lg:flex-col">
+      {[
+        ['https://www.linkedin.com/in/krbycnts/', 'logo-linkedin'],
+        ['https://github.com/kerbethecoder', 'logo-github'],
+        ['https://www.facebook.com/kerbe.cantos', 'logo-facebook'],
+        ['https://www.instagram.com/krby.cnts', 'logo-instagram'],
+      ].map(([url, logo]) => (
+        <li>
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-dimBlack"
+          >
+            <ion-icon name={logo} size="large"></ion-icon>
+          </a>
+        </li>
+      ))}
     </ul>
-  )
-}
+  );
+};
 
-export default Socials
+export default Socials;

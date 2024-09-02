@@ -1,28 +1,28 @@
-import React, { useEffect } from "react"
+import React, { useEffect } from 'react';
 
-import { observeHiddenElements } from "./intersectionObserver"
-import { avatar } from "../images"
+import { observeHiddenElements } from './intersectionObserver';
+import { avatar } from '../images';
 
 const Background = () => {
   useEffect(() => {
-    const hiddenElements = document.querySelectorAll(".hiddenElem")
-    observeHiddenElements(hiddenElements)
-  })
+    const hiddenElements = document.querySelectorAll('.hiddenElem');
+    observeHiddenElements(hiddenElements);
+  });
 
   return (
-    <section className="flexCenter flex-col gap-3 mb-60 lg:flex-row lg:gap-10 lg:mb-96">
-      <div className="lg:w-4/12 flex justify-end">
+    <section className="flexCenter mb-60 flex-col gap-3 lg:mb-96 lg:flex-row lg:gap-10">
+      <div className="flex justify-end lg:w-4/12">
         <img src={avatar} alt="" className="hiddenElem" />
       </div>
       <div className="w-11/12 lg:w-6/12">
         <h2 className="hiddenElem font-secondaryFont font-bold md:text-base lg:text-xl">
           About Me
         </h2>
-        <div className="hiddenElem xdiv my-2" />
-        <p className="hiddenElem bg__content text-sm lg:w-9/12">
-          I studied engineering for four years at{" "}
-          <strong>Divine Word College of Calapan</strong> in the{" "}
-          <strong>Philippines</strong>, where I earned{" "}
+        <div className="hiddenElem my-2 w-28 border-t-2 border-solid border-[#464a4e]" />
+        <p className="hiddenElem text-sm lg:w-9/12 lg:text-base">
+          I studied engineering for four years at{' '}
+          <strong>Divine Word College of Calapan</strong> in the{' '}
+          <strong>Philippines</strong>, where I earned{' '}
           <strong>Bachelor of Science in Computer Engineering</strong>. On my
           freshman year, I had my first experience with programming and learned
           how to use Python and C#. But it was in my third year that I first
@@ -32,7 +32,7 @@ const Background = () => {
         </p>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Background
+export default Background;

@@ -1,8 +1,8 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { graphql, useStaticQuery } from "gatsby"
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { graphql, useStaticQuery } from 'gatsby';
 
-import favicon from "../images/favicon.png"
+import favicon from '../images/favicon.png';
 
 const SEO = () => {
   const { site } = useStaticQuery(graphql`
@@ -16,11 +16,11 @@ const SEO = () => {
         }
       }
     }
-  `)
+  `);
 
-  const siteTitle = site.siteMetadata.title
-  const metaDescription = site.siteMetadata.description
-  const url = site.siteMetadata.siteUrl
+  const siteTitle = site.siteMetadata.title;
+  const metaDescription = site.siteMetadata.description;
+  const url = site.siteMetadata.siteUrl;
 
   return (
     <Helmet>
@@ -39,7 +39,7 @@ const SEO = () => {
       <meta property="twitter:title" content={siteTitle} />
       <meta property="twitter:description" content={metaDescription} />
     </Helmet>
-  )
-}
+  );
+};
 
-export default SEO
+export default SEO;

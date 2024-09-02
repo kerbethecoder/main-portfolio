@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 
 import {
   Hero,
@@ -9,7 +9,7 @@ import {
   Footer,
   Layout,
   Seo,
-} from "../components"
+} from '../components';
 
 const index = () => {
   return (
@@ -22,7 +22,7 @@ const index = () => {
       <Projects />
       <Footer />
     </Layout>
-  )
-}
+  );
+};
 
-export default index
+export default index;
