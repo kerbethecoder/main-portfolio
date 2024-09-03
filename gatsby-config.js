@@ -12,7 +12,7 @@ module.exports = {
     title: `Kerby Cantos`,
     description: `A clean and user-friendly portfolio website, offering a glimpse into my skills and achievements.`,
     author: `@kerbethecoder`,
-    siteUrl: `https://kerbethecoder.netlify.app/`,
+    siteUrl: `https://kerbethecoder.com/`,
   },
   plugins: [
     `gatsby-plugin-smoothscroll`,
@@ -28,4 +28,4 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
   ],
-}
+};

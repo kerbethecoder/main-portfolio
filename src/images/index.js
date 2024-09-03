@@ -15,10 +15,7 @@ import vsIcon from './tech-icons/vs.svg';
 import gatsbyIcon from './tech-icons/gatsby.svg';
 import nextIcon from './tech-icons/nextjs.svg';
 
-import rpsGame from './cards/rps-game.png';
-import mockNetflix from './cards/mock-netflix.png';
 import avatar from './avatar.svg';
-import theNotePad from './cards/the-notepad.png';
 
 export {
   displayPicture,
@@ -36,8 +33,5 @@ export {
   vsIcon,
   gatsbyIcon,
   nextIcon,
-  rpsGame,
-  mockNetflix,
   avatar,
-  theNotePad,
 };
