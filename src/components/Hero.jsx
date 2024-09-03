@@ -29,7 +29,7 @@ const Hero = () => {
       />
       <img
         src={displayPicture}
-        alt="display picture"
+        alt="the developer"
         className="mt-20 h-[400px] shadow-xl lg:absolute lg:left-[37.8%] lg:top-[22%] lg:mt-0"
       />
       <img

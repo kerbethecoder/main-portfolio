@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primaryFont: ['Source Sans 3', 'sans-serif'], //400, 700
+        primaryFont: [`'Source Sans 3'`, 'sans-serif'], //400, 700
         secondaryFont: ['Playfair Display', 'serif'], //400, 700
         inter: ['Inter', 'sans-serif'], //400, 700
       },

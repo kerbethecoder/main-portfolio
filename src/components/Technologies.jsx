@@ -27,7 +27,7 @@ const Technologies = () => {
         <p className="hiddenElem">
           I frequently work with the following technologies:
         </p>
-        <div className="hiddenElem grid grid-cols-3 gap-4">
+        <div className="hiddenElem grid grid-cols-2 gap-4 lg:grid-cols-3">
           {[
             [htmlIcon, 'HTML'],
             [cssIcon, 'CSS'],

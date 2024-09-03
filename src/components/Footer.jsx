@@ -10,13 +10,13 @@ const Footer = () => {
 
   return (
     <section className="flexCenter flex-col" id="contact">
-      <div className="flexCenter flex-col pb-52 lg:flex-row">
-        <div className="flex flex-col gap-5 lg:w-6/12 lg:pl-80">
+      <div className="flexCenter flex-col pb-52 xl:flex-row">
+        <div className="flex flex-col gap-5 xl:w-6/12 xl:pl-80">
           <div className="hiddenElem pl-2 md:pl-0">
-            <h2 className="font-inter text-2xl font-bold lg:text-4xl">
+            <h2 className="font-inter text-2xl font-bold xl:text-4xl">
               @kerbethecoder
             </h2>
-            <p className="-mt-1 pl-8 font-inter text-xs font-bold text-[#10100e80] lg:text-base">
+            <p className="-mt-1 pl-8 font-inter text-xs font-bold text-[#10100e80] xl:text-base">
               Average UI / UX Designer, Computer Engineer, and Web Developer.
             </p>
           </div>
@@ -26,7 +26,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn__resume rounded-lg border border-secondaryBg bg-secondaryBg px-5 py-2.5 text-xs font-bold text-primaryBg shadow-xl transition hover:border-dimBlack hover:bg-primaryBg hover:text-secondaryBg lg:text-sm">
+              <button className="btn__resume rounded-lg border border-secondaryBg bg-secondaryBg px-5 py-2.5 text-xs font-bold text-primaryBg shadow-xl transition hover:border-dimBlack hover:bg-primaryBg hover:text-secondaryBg xl:text-sm">
                 View my Résumé 👌
               </button>
             </a>
@@ -34,7 +34,7 @@ const Footer = () => {
               <ion-icon name="mail"></ion-icon>
               <a
                 href="mailto:krbycnts@gmail.com"
-                className="font-bold hover:underline md:text-sm lg:text-base"
+                className="font-bold hover:underline md:text-sm xl:text-base"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -43,15 +43,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-5 lg:mt-0 lg:w-6/12 lg:pl-40">
-          <h6 className="hiddenElem mx-auto px-2 text-center font-inter font-bold md:w-8/12 md:px-0 lg:mx-0 lg:text-left">
+        <div className="mt-5 xl:mt-0 xl:w-6/12 xl:pl-40">
+          <h6 className="hiddenElem mx-auto px-2 text-center font-inter font-bold md:w-8/12 md:px-0 xl:mx-0 xl:text-left">
             "Want to get in touch? Whether for work or just chatting, don't
             hesitate to contact me through the links on the side. I'll try my
             best to get back to you!"
           </h6>
         </div>
       </div>
-      <p className="hiddenElem pFooter pb-32 text-center text-xs text-dimBlack lg:text-sm">
+      <p className="hiddenElem pFooter pb-32 text-center text-xs text-dimBlack xl:text-sm">
         Designed in{' '}
         <a
           href="https://www.figma.com/"
